@@ -1,5 +1,10 @@
 # Your code goes here!
 class Anagram 
-  attr_accessor :name, :original 
+  attr_accessor :word
   
-  def initialize()
+  def initialize(word)
+    @word = word 
+  end 
+  
+  def match(word_arr)
+    word_arr.select do
